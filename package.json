@@ -1,0 +1,37 @@
+{
+  "name": "xxxxx",
+  "version": "0.0.0-alpha1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "xo && nyc ava",
+    "coverage": "nyc report"
+  },
+  "xo": {
+    "extends": "xo-wmik"
+  },
+  "ava": {
+    "require": [
+      "requirable"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmik/xxxxx.git"
+  },
+  "keywords": [],
+  "author": "wmik <contact@wmik.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wmik/xxxxx/issues"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "coveralls": "*",
+    "eslint-config-xo-wmik": "*",
+    "nyc": "*",
+    "requirable": "*",
+    "this": "*",
+    "xo": "*"
+  }
+}
