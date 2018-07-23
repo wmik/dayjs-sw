@@ -1,31 +1,22 @@
 import test from "ava";
-import pkg from "this";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
+import swLocale from "this";
 
-test("pkg name", t => {
-	const pkgConfig = pkg();
-	t.is(pkgConfig.name, "xxxxx");
+test.beforeEach(() => {
+	dayjs.locale(swLocale);
 });
 
-test("pkg version", t => {
-	const pkgConfig = pkg();
-	t.is(pkgConfig.version, "0.0.0-alpha1");
+test("properly formats months and days using swahili(sw) locale", t => {
+	t.is(dayjs("2018-07-16").format("MMMM"), "Julai");
+	t.is(dayjs("2018-07-16").format("dddd"), "Jumatatu");
+	t.is(dayjs("2018-02-16").format("MMMM"), "Februari");
+	t.is(dayjs("2018-02-23").format("dddd"), "Ijumaa");
 });
 
-test("pkg devDependencies", t => {
-	const devDependencies = {
-		ava: "*",
-		coveralls: "*",
-		"eslint-config-xo-wmik": "*",
-		nyc: "*",
-		requirable: "*",
-		this: "*",
-		xo: "*"
-	};
-	const pkgConfig = pkg();
-	t.deepEqual(pkgConfig.devDependencies, devDependencies);
-});
-
-test("pkg style guide", t => {
-	const pkgConfig = pkg();
-	t.deepEqual(pkgConfig.xo, { extends: "xo-wmik" });
+test("properly formats future and past", t => {
+	dayjs.extend(relativeTime);
+	t.is(dayjs("2020").from("2018"), "miaka 2 ijayo");
+	t.is(dayjs("2009").from("2018"), "miaka 9 iliyopita");
+	t.is(dayjs("2018-02").from("2018-07"), "miezi 5 iliyopita");
 });

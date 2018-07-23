@@ -1,7 +1,7 @@
 {
-  "name": "xxxxx",
-  "version": "0.0.0-alpha1",
-  "description": "",
+  "name": "dayjs-sw",
+  "version": "0.0.0-alpha.1",
+  "description": "Swahili locale for dayjs",
   "main": "src/index.js",
   "scripts": {
     "test": "xo && nyc ava",
@@ -17,21 +17,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wmik/xxxxx.git"
+    "url": "git+https://github.com/wmik/dayjs-sw.git"
   },
   "keywords": [],
   "author": "wmik <contact@wmik.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wmik/xxxxx/issues"
+    "url": "https://github.com/wmik/dayjs-sw/issues"
   },
   "devDependencies": {
-    "ava": "*",
-    "coveralls": "*",
-    "eslint-config-xo-wmik": "*",
-    "nyc": "*",
-    "requirable": "*",
-    "this": "*",
-    "xo": "*"
+    "ava": "^0.25.0",
+    "coveralls": "^3.0.2",
+    "dayjs": "^1.7.4",
+    "eslint-config-xo-wmik": "^0.0.0",
+    "nyc": "^13.0.0",
+    "requirable": "^1.0.5",
+    "this": "^1.0.2",
+    "xo": "^0.21.1"
   }
 }
