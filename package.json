@@ -38,7 +38,7 @@
     "nyc": "^14.0.0",
     "requirable": "^1.0.5",
     "semantic-release": "^15.12.5",
-    "this": "^1.0.2",
+    "this": "^1.1.0",
     "travis-deploy-once": "^5.0.10",
     "xo": "^0.24.0"
   }
