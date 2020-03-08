@@ -33,7 +33,7 @@
   "devDependencies": {
     "ava": "^1.0.1",
     "codecov": "^3.0.4",
-    "dayjs": "^1.7.8",
+    "dayjs": "^1.8.22",
     "eslint-config-xo-wmik": "^0.0.0",
     "nyc": "^14.0.0",
     "requirable": "^1.0.5",
