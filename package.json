@@ -35,7 +35,7 @@
     "codecov": "^3.0.4",
     "dayjs": "^1.7.8",
     "eslint-config-xo-wmik": "^0.0.0",
-    "nyc": "^14.0.0",
+    "nyc": "^15.1.0",
     "requirable": "^1.0.5",
     "semantic-release": "^15.12.5",
     "this": "^1.0.2",
